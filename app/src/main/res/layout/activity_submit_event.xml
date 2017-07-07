@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ubicar Marcador en el Mapa:" />
+
+        <fragment
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="400dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            tools:context="com.example.alumno.desastresnaturales.SubmitEventActivity" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripcion:" />
+
+        <EditText
+            android:id="@+id/eventos_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:inputType="text|textNoSuggestions"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de incidente:" />
+
+        <Spinner
+            android:id="@+id/eventos_desplegable"
+            android:layout_marginBottom="20dp"
+            android:entries="@array/eventos"
+            android:prompt="@string/titulo_desplegable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/enviarEvento_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:text="Enviar" />
+    </LinearLayout>
+
+
+</FrameLayout>
+

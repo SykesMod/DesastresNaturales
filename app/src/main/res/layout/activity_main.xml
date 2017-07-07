@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/LoginTheme"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/login_bg"
+    tools:context="com.example.alumno.desastresnaturales.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_inicio_sesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:tint="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:src="@drawable/icon"
+            android:layout_marginBottom="50dp"
+            android:layout_weight="0.34" />
+
+        <EditText
+            android:id="@+id/editTextUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="Usuario"
+            android:inputType="textPersonName|textNoSuggestions"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/editTextContra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+
+            <Button
+                android:id="@+id/button_registrarse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/borde_botones"
+                android:text="Registrarse" />
+
+
+            <Button
+                android:id="@+id/button_ingresar"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_weight="1"
+                android:text="Ingresar"
+                android:background="@drawable/borde_botones"
+                android:layout_marginLeft="15dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main_registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Registro"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nombre de Usuario:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/registro_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName|textNoSuggestions"
+            android:layout_marginBottom="20dp"
+            android:text="" />
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Correo Electronico:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/registro_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress|textNoSuggestions"
+            android:layout_marginBottom="20dp"
+            android:text="" />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Contraseña:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/registro_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_marginBottom="20dp"
+            android:text="" />
+
+        <CheckBox
+            android:id="@+id/registro_entidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="Registrar como entidad" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/main_registro"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:id="@+id/registro_buttons">
+
+        <Button
+            android:id="@+id/registro_back"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Atras"
+            android:textAlignment="center"/>
+        <Button
+            android:id="@+id/registro_submit"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Registrar"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Desastres Naturales</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="titulo_desplegable">Seleccionar...</string>
+
+    <string-array name="eventos">
+        <item>Zona de Desastre</item>
+        <item>Zona de Riesgo</item>
+        <item>Entrega de Ayuda</item>
+    </string-array>
+</resources>

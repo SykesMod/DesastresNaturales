@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "133578406131",
+    "firebase_url": "https://desastresnaturales-6e1fd.firebaseio.com",
+    "project_id": "desastresnaturales-6e1fd",
+    "storage_bucket": "desastresnaturales-6e1fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133578406131:android:5a3b0813920fdc00",
+        "android_client_info": {
+          "package_name": "com.example.alumno.desastresnaturales"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133578406131-vbefq984bnhn32krn5bubpbc3qome4bu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alumno.desastresnaturales",
+            "certificate_hash": "b85e11d688015ffdd8ad77018922b91bb75f1779"
+          }
+        },
+        {
+          "client_id": "133578406131-2o5sg6njlb9310mp4kird9b267b9ibnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxh06mIUL_QWMcfWs76WUAFxb2JixDWIE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133578406131-2o5sg6njlb9310mp4kird9b267b9ibnt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
